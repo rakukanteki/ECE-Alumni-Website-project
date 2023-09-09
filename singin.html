@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reconnect with Dept. of ECE and your classmates through our alumni directory, programs and events, stories, news and many more">
+    <meta name="keywords" content="RUET ECE Alumni, Alumni Affairs, Givings, Clubs, Events">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Playfair+Display&family=Ysabeau+SC:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Welcome to RUET ECE Alumni | Log in</title>
+    <link rel="stylesheet" type="text/css" href="css/signin.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="home.html" title="ECE ALUMNI" rel="home">
+                <img src="css/images/RUET ALUMNI LOGO.png" alt="ECE ALUMNI" width="200">
+            </a>
+        </div>
+
+        <div class="icon">
+            <a href="#"><ion-icon name="person" onclick="toggleMenu()"></ion-icon></a>
+        </div>
+
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <a href="#" class="sub-menu-link"><ion-icon name="settings-outline"></ion-icon> Account Settings</a>
+                <a href="#" class="sub-menu-link"><ion-icon name="log-out-outline"></ion-icon> Log out</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        let subMenu=document.getElementById("subMenu");
+
+        function toggleMenu()
+        {
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>

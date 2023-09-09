@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reconnect with Dept. of ECE and your classmates through our alumni directory, programs and events, stories, news and many more">
+    <meta name="keywords" content="RUET ECE Alumni, Alumni Affairs, Givings, Clubs, Events">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Playfair+Display&family=Ysabeau+SC:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <title>Welcome to RUET ECE Alumni | Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- NAVIGATION BAR PART -->
+    <div class="top-bar">
+        <div class="CONTAINER">
+            <a href="singin.html">Alumni Login</a>
+            <a href="#">Register</a>   
+        </div>
+    </div>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+            <a href="#" title="ECE ALUMNI" rel="home">
+                <img src="css/images/RUET ALUMNI LOGO.png" alt="ECE ALUMNI" width="200">
+            </a>
+            </div>
+
+            <ul class="links">
+                <li class="current"><a href="home.html"></a></li>
+                <li><a href="community.html">community</a></li>
+                <li><a href="programsandevents.html">programs and events</a></li>
+                <li><a href="givings.html">giving</a></li>
+                <li><a href="network.html">networks</a></li>
+                <li><a href="news.html">news</a></li>
+            </ul>
+            <div class="toggle_button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="community.html">community</a></li>
+            <li><a href="programsandevents.html">programs and events</a></li>
+            <li><a href="givings.html">givings</a></li>
+            <li><a href="network.html">networks</a></li>
+            <li><a href="news.html">news</a></li>
+        </div>
+    </header>
+
+
+    <!-- FOOTER PART -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#">01234567891</a></li>
+                        <li><a href="#">ece.alumni@ruet.edu</a></li>
+                        <li><a href="#">CSE Building, 4th Floor, Rajshahi University of Engineering & Technology
+                            <br>Kazla, Rajshahi-6204, Bangladesh.</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Get Help</h3>
+                    <ul>
+                        <li><a href="#">CONTACT WITH ALUMNI SERVICE DESK</a></li>
+                        <li><a href="#">GET ALL CONTACTS</a></li>
+                        <li><a href="#">VIEW ALL SCHEDULE</a></li>
+                        <li><a href="#">REPORT A PROBLEM</a></li>
+                        <li><a href="#">VIEW ECE ACADEMIC PROGRAMS</a></li>
+                        <li><a href="#">VIEW ACHIEVEMENTS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>About this site</h3>
+                    <ul>
+                        <li><a href="#">TERMS AND CONDITIONS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">FEEDBACK</a></li>
+                        <li><a href="https://www.ece.ruet.ac.bd/" target="_blank">LEARN MORE ABOUT ECE</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Social Links</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/eceruet2015" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Copyright">
+            <p>ECE Website, Copyright &copy; 2023</p>
+        </div>
+    </footer>
+
+    <!-- JS PART TO MAKE THE HAMBURGER RESPONSIVE -->
+    <script>
+        const toggleButton= document.querySelector('.toggle_button')
+        const toggleButtonIcon= document.querySelector('.toggle_button i')
+        const dropDownMenu= document.querySelector('.dropdown_menu')
+
+        toggleButton.onclick=function()
+        {
+            dropDownMenu.classList.toggle('open')
+            const isOpen =dropDownMenu.classList.contains('open')
+
+            toggleButtonIcon.classList = isOpen
+             ?'fa-solid fa-xmark'
+             :'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
