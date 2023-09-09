@@ -1,0 +1,90 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav .logo
+{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    margin-left: 35px;
+    top:17px;
+    left: 4%;
+}
+
+nav
+{
+    background: #ffffff;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+nav .icon 
+{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 38px;
+    cursor: pointer;
+}
+
+nav .icon a
+{
+    color: rgb(37, 26, 26);
+    text-decoration: none;
+}
+
+nav .sub-menu-wrap
+{
+    position: absolute;
+    top: 82px;
+    right: 38px;
+    width: 186px;
+    max-height: 0px;
+    overflow: hidden;
+    border-radius: 38px;
+    transition: max-height 0.3s;
+}
+
+.sub-menu-wrap.open-menu
+{
+    max-height: 400px;
+}
+
+nav .sub-menu
+{
+    background: rgb(57, 56, 56);
+    padding: 20px;
+    margin: 10px;
+    padding-top: 9px;
+    padding-bottom: 6px;
+}
+
+nav .sub-menu-link
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 8px 0;
+}
+
+nav .sub-menu a
+{
+    transition: transform 0.2s;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+nav .sub-menu a:hover
+{
+    transform: translateX(2px);
+}
